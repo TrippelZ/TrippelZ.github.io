@@ -38,14 +38,14 @@
 				CookieAmount.innerHTML = "Current cookies: " + Points;
 			}
 			if("Multiplier" in localStorage) {
-				Points = localStorage.getItem("Multiplier");
+				Multiplier = localStorage.getItem("Multiplier");
 			}
 			if("Upgrade1Times" in localStorage) {
-				Points = localStorage.getItem("Upgrade1Times");
+				Upgrade1Times = localStorage.getItem("Upgrade1Times");
 				Upgrade1Text.innerHTML = "Upgraded " + Upgrade1Times + " times!	Price: " + Upgrade1Price;
 			}
 			if("Upgrade1Price" in localStorage) {
-				Points = localStorage.getItem("Upgrade1Price");
+				Upgrade1Price = localStorage.getItem("Upgrade1Price");
 				Upgrade1Text.innerHTML = "Upgraded " + Upgrade1Times + " times!	Price: " + Upgrade1Price;
 			}
 			
