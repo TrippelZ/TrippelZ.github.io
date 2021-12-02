@@ -34,18 +34,18 @@
 			var CookieAmount = document.getElementById("CookieAmount");	/* Get the text where it displays your cookies */
 			
 			if("Cookies" in localStorage) {
-				Points = localStorage.getItem("Cookies");
+				Points = parseFloat(localStorage.getItem("Cookies"));
 				CookieAmount.innerHTML = "Current cookies: " + Points;
 			}
 			if("Multiplier" in localStorage) {
-				Multiplier = localStorage.getItem("Multiplier");
+				Multiplier = parseFloat(localStorage.getItem("Multiplier"));
 			}
 			if("Upgrade1Times" in localStorage) {
-				Upgrade1Times = localStorage.getItem("Upgrade1Times");
+				Upgrade1Times = parseFloat(localStorage.getItem("Upgrade1Times"));
 				Upgrade1Text.innerHTML = "Upgraded " + Upgrade1Times + " times!	Price: " + Upgrade1Price;
 			}
 			if("Upgrade1Price" in localStorage) {
-				Upgrade1Price = localStorage.getItem("Upgrade1Price");
+				Upgrade1Price = parseFloat(localStorage.getItem("Upgrade1Price"));
 				Upgrade1Text.innerHTML = "Upgraded " + Upgrade1Times + " times!	Price: " + Upgrade1Price;
 			}
 			
