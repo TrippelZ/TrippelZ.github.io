@@ -51,23 +51,23 @@
 			
 			/* Function executed when the main button to gain points is pressed */
 			function Click() {
-				var AddPoints = 1 * Multiplier;
-				Points += AddPoints;
+				var AddPoints = 1 * Multiplier
+				Points += AddPoints
 				localStorage.setItem("Cookies", Points)
-				CookieAmount.innerHTML = "Current cookies: " + Points;
-				CookieButton.width = "255";
-				setTimeout(() => {CookieButton.width = "250";}, 100);
+				CookieAmount.innerHTML = "Current cookies: " + Points
+				CookieButton.width = "255"
+				setTimeout(() => {CookieButton.width = "250";}, 100)
 			}
 			
 			/* Function executed when player press the upgrade button */
 			function Upgrade1Click() {
 				if (Points >= Upgrade1Price) {
-					Multiplier += 1;
-					Upgrade1Times += 1;
-					Points -= Upgrade1Price;
-					Upgrade1Price += 15;
-					Upgrade1Text.innerHTML = "Upgraded " + Upgrade1Times + " times!	Price: " + Upgrade1Price;
-					CookieAmount.innerHTML = "Current cookies: " + Points;
+					Multiplier += 1
+					Upgrade1Times += 1
+					Points -= Upgrade1Price
+					Upgrade1Price += 15
+					Upgrade1Text.innerHTML = "Upgraded " + Upgrade1Times + " times!	Price: " + Upgrade1Price
+					CookieAmount.innerHTML = "Current cookies: " + Points
 					localStorage.setItem("Upgrade1Times", Upgrade1Times)
 					localStorage.setItem("Upgrade1Price", Upgrade1Price)
 					localStorage.setItem("Multiplier", Multiplier)
