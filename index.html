@@ -33,18 +33,18 @@
 			
 			var CookieAmount = document.getElementById("CookieAmount");	/* Get the text where it displays your cookies */
 			
-			if(localStorage.getItem("Cookies") |== null) {
+			if(localStorage.getItem("Cookies") |= null) {
 				Points = localStorage.getItem("Cookies");
 				CookieAmount.innerHTML = "Current cookies: " + Points;
 			}
-			if(localStorage.getItem("Multiplier") |== null) {
+			if(localStorage.getItem("Multiplier") |= null) {
 				Points = localStorage.getItem("Multiplier");
 			}
-			if(localStorage.getItem("Upgrade1Times") |== null) {
+			if(localStorage.getItem("Upgrade1Times") |= null) {
 				Points = localStorage.getItem("UpgradeTimes");
 				Upgrade1Text.innerHTML = "Upgraded " + Upgrade1Times + " times!	Price: " + Upgrade1Price;
 			}
-			if(localStorage.getItem("Upgrade1Price") |== null) {
+			if(localStorage.getItem("Upgrade1Price") |= null) {
 				Points = localStorage.getItem("UpgradePrice");
 				Upgrade1Text.innerHTML = "Upgraded " + Upgrade1Times + " times!	Price: " + Upgrade1Price;
 			}
@@ -70,6 +70,7 @@
 					CookieAmount.innerHTML = "Current cookies: " + Points;
 					localStorage.setItem("Upgrade1Times", Upgrade1Times)
 					localStorage.setItem("Upgrade1Price", Upgrade1Price)
+					localStorage.setItem("Multiplier", Multiplier)
 				}
 			}
 		</script>
